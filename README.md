@@ -499,15 +499,10 @@ The project can be extended with additional features such as:
 **Aman Thakur**
 
 26MCI10276
+MCA(AI/ML)
 
 **Project:** Hostel Parcel and Delivery Management System
 **Project Type:** Mini Project
 **Domain:** Java Web Development & Database Management
 
 ---
-
-## ⭐ Support
-
-If you find this project useful for learning Java web development and database programming, consider giving the repository a ⭐ on GitHub.
-
-**Thank you for visiting this project!**
