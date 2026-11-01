@@ -1,9 +1,3 @@
--- =====================================================================
--- DATABASE: hostel_parcel_db
--- PROJECT: Hostel Parcel and Delivery Management System
--- MCA Mini Project Database Script (MySQL 8.0+)
--- =====================================================================
-
 DROP DATABASE IF EXISTS hostel_parcel_db;
 CREATE DATABASE hostel_parcel_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE hostel_parcel_db;
