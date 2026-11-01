@@ -1,0 +1,261 @@
+/* ==========================================================================
+   Hostel Parcel and Delivery Management System
+   MCA Mini Project Stylesheet
+   Color Scheme: White, Light Blue (#e3f2fd, #0d6efd), Soft Grey (#f8f9fa, #6c757d)
+   ========================================================================== */
+
+:root {
+    --primary-blue: #0d6efd;
+    --primary-blue-dark: #0b5ed7;
+    --light-blue-bg: #e3f2fd;
+    --soft-grey: #f8f9fa;
+    --border-grey: #dee2e6;
+    --text-dark: #212529;
+    --text-muted: #6c757d;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--text-dark);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--light-blue-bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.navbar-brand-title {
+    font-weight: 600;
+    color: var(--primary-blue);
+    font-size: 1.25rem;
+}
+
+/* Page Header & Breadcrumbs */
+.page-header-box {
+    background-color: var(--soft-grey);
+    border-bottom: 1px solid var(--border-grey);
+    padding: 1.25rem 0;
+    margin-bottom: 1.5rem;
+}
+
+/* Summary Cards */
+.stat-card {
+    background: #ffffff;
+    border: 1px solid var(--border-grey);
+    border-radius: 8px;
+    padding: 1.25rem;
+    transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.stat-card:hover {
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.08);
+}
+
+.stat-card .stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.stat-card.blue .stat-icon {
+    background-color: var(--light-blue-bg);
+    color: var(--primary-blue);
+}
+
+.stat-card.amber .stat-icon {
+    background-color: #fff3cd;
+    color: #ffc107;
+}
+
+.stat-card.green .stat-icon {
+    background-color: #d1e7dd;
+    color: #198754;
+}
+
+.stat-card.grey .stat-icon {
+    background-color: #e2e3e5;
+    color: #6c757d;
+}
+
+.stat-card .stat-number {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.stat-card .stat-label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Admin Sidebar */
+.admin-sidebar {
+    background-color: var(--soft-grey);
+    border-right: 1px solid var(--border-grey);
+    min-height: calc(100vh - 56px);
+    padding: 1.25rem 0;
+}
+
+.admin-sidebar .sidebar-heading {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--text-muted);
+    padding: 0.5rem 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+.admin-sidebar .nav-link {
+    color: #495057;
+    font-weight: 500;
+    padding: 0.65rem 1.25rem;
+    display: flex;
+    align-items: center;
+    border-left: 3px solid transparent;
+}
+
+.admin-sidebar .nav-link:hover {
+    background-color: var(--light-blue-bg);
+    color: var(--primary-blue);
+}
+
+.admin-sidebar .nav-link.active {
+    background-color: var(--light-blue-bg);
+    color: var(--primary-blue);
+    border-left-color: var(--primary-blue);
+    font-weight: 600;
+}
+
+/* Tables */
+.table-custom {
+    background-color: #ffffff;
+    border: 1px solid var(--border-grey);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.table-custom th {
+    background-color: var(--soft-grey);
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #495057;
+    border-bottom: 2px solid var(--border-grey);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.table-custom td {
+    vertical-align: middle;
+    font-size: 0.925rem;
+}
+
+/* Status Badges */
+.badge-received {
+    background-color: #0dcaf0;
+    color: #000;
+    font-weight: 600;
+    padding: 0.35em 0.65em;
+}
+
+.badge-pending {
+    background-color: #ffc107;
+    color: #000;
+    font-weight: 600;
+    padding: 0.35em 0.65em;
+}
+
+.badge-delivered {
+    background-color: #198754;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.35em 0.65em;
+}
+
+/* Simple Cards */
+.card-simple {
+    border: 1px solid var(--border-grey);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+}
+
+.card-simple .card-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-grey);
+    font-weight: 600;
+    padding: 1rem 1.25rem;
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* Timeline for Parcel History */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    bottom: 5px;
+    width: 2px;
+    background-color: var(--border-grey);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -2rem;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--primary-blue);
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 1px var(--border-grey);
+}
+
+.timeline-content {
+    background-color: var(--soft-grey);
+    padding: 0.85rem 1.25rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-grey);
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    background-color: var(--soft-grey);
+    border-top: 1px solid var(--border-grey);
+    padding: 1rem 0;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
